@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+    <!-- Coding by CodingLab | www.codinglabweb.com -->
+    <html lang="en">
+    <head>
+        <style>h2{text-align: center;}</style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Card Slider</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/styles.css">
+                                        
+    </head>
+    <body>
+        
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div align="center">
+                        <button class="button"><a href="{{url_for ('searchJob')}}">Job Opp</a></button>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/csel.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Computer Science & Engineering</h2>
+                            <button class="button" ><a href="{{url_for ('cse_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            
+                            <div class="card-image">
+                                <img src="/static/chem.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Chemical Engineering</h2>
+                            <button class="button"><a href="{{url_for ('civil_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            
+                            <div class="card-image">
+                                <img src="/static/civil.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Civil Engineering</h2>
+                            <button class="button"><a href="{{url_for ('civil_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/static/ECE.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Electrical and Computer Engineering</h2>
+                            <button class="button"><a href="{{url_for ('ece_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/static/MECH.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mechanical Engineering</h2>
+                            <button class="button"><a href="{{url_for ('mech_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/static/eng.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.A. in English</h2>
+                            <button class="button"><a href="{{url_for ('eng_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/hst.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.A. in History</h2>
+                            <button class="button"><a href="{{url_for ('hst_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/SOC.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.A. in Sociology</h2>
+                            <button class="button"><a href="{{url_for ('soc_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/static/BMS.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Bachelor of Management Studies</h2>
+                            <button class="button"><a href="{{url_for ('bms_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/ECO.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Economics</h2>
+                            <button class="button"><a href="{{url_for ('eco_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/static/IR.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.A. in International Relations</h2>
+                            <button class="button"><a href="{{url_for ('ir_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            
+                            <div class="card-image">
+                                <img src="/static/BIOTECH.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Biotechnology</h2>
+                            <button class="button"><a href="{{url_for ('bio')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/static/chem.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Chemistry</h2>
+                            <button class="button"><a href="{{url_for ('chemistry_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            
+                            <div class="card-image">
+                                <img src="/static/PHY.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Physics</h2>
+                            <button class="button"><a href="{{url_for ('phy_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                           
+
+                            <div class="card-image">
+                                <img src="/static/ECOFIN.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Economics & Finance</h2>
+                            <button class="button"><a href="{{url_for ('ecofin_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                        <style>
+                            a{
+                                text-decoration: none;
+                                color: white;
+                            }
+                        </style>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+
+
+                            <div class="card-image">
+                                <img src="/static/MATH.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">B.Sc. in Mathematics</h2>
+                            <button class="button"><a href="{{url_for ('math_guide')}}">Higher studies guidance</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </body>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</html>

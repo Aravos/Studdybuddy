@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Available Job offers</title>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/job.css">
+    </head>
+<div class="container">
+    <h1>Job Offers Available</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Company</th>
+				<th>Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for i in data %}
+			<tr>
+				<td>{{i.0}}</a></td>
+				<td><a href ="{{i.1}}">Link To Job</a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,55 @@
+body{
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+.container{
+top: 40%;
+left:40%;
+transform:translate (-508, -50%);
+position: absolute;
+}
+.container1{
+  top: 110%;
+  left:10%;
+  transform:translate (-508, -50%);
+  position: absolute;
+}
+.text-box{
+  font-size: 16px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 100px;
+  outline: none;
+}
+.upload-box{
+  font-size: 16px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 350px;
+  outline: none;
+}
+::-webkit-file-upload-button{
+color:white;
+background: #2f8088;
+padding:20px;
+border: none;
+border-radius: 50px;
+box-shadow:1px 0 1px 1px #000;
+outline: none;
+}
+::-webkit-file-upload-button:hover{
+  background:#9f01ea;
+}
+.btn-primary{
+  color:white;
+  background: #2f8088;
+  padding:20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow:1px 0 1px 1px #000;
+  outline: none;
+}
+.btn-primary:hover{
+  background:#9f01ea;
+}

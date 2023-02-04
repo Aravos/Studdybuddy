@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <meta name="'viewport" content="width=device-width" ,initial-scale="1.0">
+    <title> college </title>
+    <link rel="stylesheet" href="static/collegestyling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <head>
+        <title>college</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  color:black;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #7ca2e4;
+}
+</style>
+</head>
+<body>
+
+<style>h1{text-align:center} h2{text-align: center;}
+p{text-align: center;}</style>
+</head>
+<body><h1> Find Study Resources</h1>
+<p>Find the study resources you need for all your classes . 
+ StuddyBuddy has millions of study documents,to help you study and learn.</p>
+ <br>
+<form align="center" action="#" method="post">
+  <div class="data">
+    <input type="text" placeholder="Filename" name="filename">
+  </div>
+  <div class="data">
+    <input type="text" placeholder="Enter Topic" name="genre">
+  </div>
+  <div class="data">
+    <input type="text" placeholder="Enter College" name="college">
+  </div>
+  <div class="btn">
+    <div class="inner"></div>
+    <button type="submit"><i class="fa fa-search"></i></button>
+
+ </div>
+</form>
+<br>
+<br>
+<br>
+<div class="container" id="browse-subjects">
+    <div class="fs-browse-section">
+<h2 class="school-widget-intro fs-browse-heading">
+    Find Notes
+</h2>
+<table>
+  <tr>
+    <th>User</th>
+    <th>View file</th>
+    <th>Download</th>
+  </tr>
+  {% for row in searchresult %}
+  <tr>
+    <td>{{row.0}}</td>
+    <td><a href ="{{ url_for ('view',upload_id=row[3]) }}">{{row.1}}</a></td>
+    <td><a href ="{{ url_for ('download',upload_id=row[3]) }}">Download File</a></td>
+  </tr>
+  {% endfor %}
+</table>
+<!--<div class="fs-browse-schools-results-container">
+    <div class="loading-list" >
+        <img class="search-results_loader" src="/assets/img/ajax-loaders/hexagon-loader.gif" /><br /> Retrieving your results...
+    </div>
+    Use this if there are no listings
+    <div class="no-listings" style="display: none;">
+        <p>We are sorry, there are no listings for the current search parameters.
+        <br /><a href="#" class="reset-button">Reset the search filters</a>
+        </p>
+-->
+<style>
+  table{
+    right: 150px;
+  }
+  </style> 
