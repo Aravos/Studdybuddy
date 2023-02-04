@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HIML 4.0 Transitional//EN">
+<html>
+<head>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT=!!>
+<META NAME="Keywords" CONTENT="")>
+<META NAME="Description" CONTENT="">
+<link rel="stylesheet" href="static/fileupload.css">
+</HEAD>
+<BODY>
+<form action="{{ url_for('fileupload') }}" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+<div class="container">
+<input name="file" type="file" class="upload-box"/>
+<div class="form-group1">
+    <div class="container1">
+    <input type="text" class="text-box" name="genre" />
+<button type="submit" class="btn btn-primary">Upload file</button>
+</div>
+</form>
+ </BODY>
+</HTML>
